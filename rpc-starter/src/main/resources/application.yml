@@ -1,0 +1,19 @@
+# Dubbo
+dubbo:
+  # 注册中心
+  application:
+    id: dubbo-provider-demo
+    name: dubbo-provider-demo
+  # 注册中心
+  registry:
+    id: lcn-rpc
+    address: localhost
+    port: 2189
+  # 实现类路径
+  scan:
+    base-packages: com.can.provider.impl
+  # 协议
+  protocol:
+      id: dubbo
+      name: dubbo
+      port: 28888

@@ -2,7 +2,6 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
         <artifactId>lcn-rpc</artifactId>
         <groupId>com.can</groupId>
@@ -10,10 +9,10 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lcn-starter</artifactId>
+    <artifactId>rpc-starter</artifactId>
     <packaging>jar</packaging>
 
-    <name>lcn-starter</name>
+    <name>rpc-starter</name>
     <description>项目启动层</description>
 
     <dependencies>
@@ -31,6 +30,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.can</groupId>
+            <artifactId>rpc-provider</artifactId>
         </dependency>
     </dependencies>
 

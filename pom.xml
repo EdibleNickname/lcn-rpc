@@ -28,7 +28,7 @@
 
     <groupId>com.can</groupId>
     <artifactId>lcn-rpc</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencyManagement>
         <dependencies>
@@ -72,27 +72,27 @@
             <dependency>
                 <groupId>com.can</groupId>
                 <artifactId>rpc-dao</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.can</groupId>
                 <artifactId>rpc-config</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.can</groupId>
                 <artifactId>rpc-provider</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.can</groupId>
                 <artifactId>rpc-core</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.can</groupId>
                 <artifactId>rpc-starter</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
         </dependencies>

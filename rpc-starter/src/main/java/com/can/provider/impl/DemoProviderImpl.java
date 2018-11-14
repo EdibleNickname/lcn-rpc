@@ -14,6 +14,7 @@ public class DemoProviderImpl implements DemoProvider {
 
 	@Override
 	public String sayHello() {
+		System.out.println("请求中....");
 		return "请求成功";
 	}
 }

@@ -6,14 +6,18 @@ dubbo:
     name: dubbo-provider-demo
   # 注册中心
   registry:
-    id: lcn-rpc
+    id: lcn-rpc-provider
+    protocol: zookeeper
     address: localhost
-    port: 2189
+    port: 2181
   # 实现类路径
   scan:
     base-packages: com.can.provider.impl
   # 协议
   protocol:
-      id: dubbo
-      name: dubbo
-      port: 28888
+    id: dubbo
+    name: dubbo
+    port: 20880
+    status: server
+
+

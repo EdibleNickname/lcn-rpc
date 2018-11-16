@@ -12,8 +12,36 @@
 
     <artifactId>rpc-config</artifactId>
     <packaging>jar</packaging>
-    <name>rpc-dao</name>
+    <name>rpc-config</name>
     <description>配置层</description>
+
+    <dependencies>
+
+        <!--不引入 spring-boot-starter-web 使其不是java web项目-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--RabbitMq-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--子模块-->
+        <dependency>
+            <groupId>com.can</groupId>
+            <artifactId>rpc-dao</artifactId>
+        </dependency>
+
+    </dependencies>
 
 
 </project>

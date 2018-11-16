@@ -2,11 +2,39 @@
 server:
   port: 82
 
+# actuator监控
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      # 请求的根路径
+      base-path: /
+      # 暴露所有的端点
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+
 spring:
+  # 配置文件
+  profiles:
+    active: dev
   #热部署
   devtools:
     restart:
       enabled: true
+  #rabbitMq
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: demo
+    password: 123456
+    # 消息消费结果是否回调
+    publisher-confirms: true
+    virtual-host: /
 
 # Dubbo
 dubbo:

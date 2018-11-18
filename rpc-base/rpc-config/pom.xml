@@ -35,6 +35,12 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+
+        <dependency>
+            <groupId>com.can</groupId>
+            <artifactId>lcn-common</artifactId>
+        </dependency>
+
         <!--子模块-->
         <dependency>
             <groupId>com.can</groupId>

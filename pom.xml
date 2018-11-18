@@ -18,6 +18,8 @@
         <java.version>1.8</java.version>
         <dubbo.starter.version>0.2.0</dubbo.starter.version>
         <spring.actuator.version>2.0.2.RELEASE</spring.actuator.version>
+
+        <lcn.common.version>1.0-SNAPSHOT</lcn.common.version>
     </properties>
 
     <modules>
@@ -39,6 +41,13 @@
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo.starter.version}</version>
+            </dependency>
+
+            <!--工具包-->
+            <dependency>
+                <groupId>com.can</groupId>
+                <artifactId>lcn-common</artifactId>
+                <version>${lcn.common.version}</version>
             </dependency>
 
             <!--子模块-->

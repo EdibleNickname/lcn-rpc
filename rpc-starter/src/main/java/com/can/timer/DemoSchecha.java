@@ -1,6 +1,7 @@
 package com.can.timer;
 
-import com.can.mq.Producer.DemoProducer;
+import com.can.mq.Demo;
+import com.can.mq.Producer.DemoDirectProducer;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -18,13 +19,15 @@ import javax.annotation.Resource;
 public class DemoSchecha {
 
 	@Resource
-	private DemoProducer demoProducer;
+	private DemoDirectProducer demoProducer;
 
-	@Scheduled(fixedRate = 5000)
+	@Scheduled(fixedRate = 10000)
 	public void sendMsg() {
-		System.out.println("生产消息开始了......");
-		String content = "消息客户端";
-		demoProducer.sendMsg(content);
+
+		Demo demo = new Demo();
+		demo.setNum(1314);
+		demo.setName("demoName");
+		demoProducer.sendDirectMsg(demo);
 	}
 
 }
